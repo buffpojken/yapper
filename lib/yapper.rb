@@ -15,7 +15,6 @@ Motion::Project::App.setup do |app|
 
   app.pods do
     pod 'YapDatabase'      ,'~> 2.5.3'
-    pod 'CocoaLumberjack'  ,'~> 1.8.1'
     pod 'NSData+MD5Digest' ,'~> 1.0.0'
   end
 
