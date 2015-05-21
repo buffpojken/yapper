@@ -8,10 +8,10 @@ require 'motion-support/inflector'
 require 'motion-support/core_ext'
 
 files = Dir.glob(File.expand_path('../../lib/yapper/**/*.rb', __FILE__))
-Motion::Require.all(files)
+#Motion::Require.all(files)
 
 Motion::Project::App.setup do |app|
-  app.detect_dependencies = false
+  app.detect_dependencies = true
 
   app.pods do
     pod 'YapDatabase'      ,'~> 2.5.3'
